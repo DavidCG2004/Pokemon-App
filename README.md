@@ -1,14 +1,21 @@
 # ⚡ Pokédex App - Ionic & Angular ⚡
 
 Una aplicación móvil y web moderna construida con **Ionic Framework** y **Angular**, diseñada para consumir la [PokeAPI](https://pokeapi.co/) y mostrar información detallada de los Pokémon con una interfaz de usuario atractiva y animaciones personalizadas.
-<p align="center">
-
+<div align="center">
+  <div style="display: grid; 
+              grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+              gap: 14px; 
+              max-width: 580px;">
+    
+    
   ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+    ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
+    ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
+    
+  </div>
+</div>
 
-  ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
 
-  ![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
-</p>
 ## ✨ Características Principales
 * **Búsqueda Dinámica:** Encuentra cualquier Pokémon por su nombre usando el servicio de PokeAPI.
 * **Información Detallada:** Visualización de Arte Oficial, tipos, peso, altura, experiencia base y habilidades (identificando las ocultas).
