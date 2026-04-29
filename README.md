@@ -1,1 +1,82 @@
-# Pokemon-App
+# ⚡ Pokédex App - Ionic & Angular ⚡
+
+Una aplicación móvil y web moderna construida con **Ionic Framework** y **Angular**, diseñada para consumir la [PokeAPI](https://pokeapi.co/) y mostrar información detallada de los Pokémon con una interfaz de usuario atractiva y animaciones personalizadas.
+
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=for-the-badge&logo=capacitor&logoColor=white)
+
+## ✨ Características Principales
+* **Búsqueda Dinámica:** Encuentra cualquier Pokémon por su nombre usando el servicio de PokeAPI.
+* **Información Detallada:** Visualización de Arte Oficial, tipos, peso, altura, experiencia base y habilidades (identificando las ocultas).
+* **Estadísticas Visuales:** Implementación de barras de progreso (`ion-progress-bar`) calculadas porcentualmente para las estadísticas de combate (PS, Ataque, Defensa, etc.).
+* **Audio Nativo:** Reproducción del grito oficial (cry) del Pokémon al presionar un botón.
+* **Splash Screen Personalizado:** Animación de carga creada 100% con CSS puro (Pokeball rotatoria y rebotando), reemplazando el splash estático por defecto.
+* **Assets Nativos:** Íconos de aplicación generados automáticamente para iOS y Android usando `@capacitor/assets`.
+
+---
+
+## 📱 Capturas de la Aplicación
+
+A continuación se muestra el diseño adaptable (Responsive) funcionando tanto en entorno web (Desktop) como simulado en dispositivo móvil.
+
+### 💻 Vista Desktop (Web)
+*(Coloca aquí la captura de pantalla de la app abierta en tu navegador a pantalla completa. Se recomienda buscar a Charizard o Mew para mostrar datos completos).*
+
+![Vista Desktop](./screenshots/desktop-view.png)
+> *Vista extendida aprovechando el sistema de cuadrículas (`ion-grid`) de Ionic.*
+
+### 📱 Vista Móvil (App)
+*(Coloca aquí una captura de la app usando las DevTools de Chrome simulando un teléfono, o una captura directamente desde tu celular).*
+
+![Vista Móvil](./screenshots/mobile-view.png)
+> *Vista compacta renderizando los componentes nativos móviles.*
+
+---
+
+## 🛠️ Detalle del Proceso de Desarrollo
+
+El desarrollo de esta aplicación se dividió en varias fases estratégicas, priorizando las buenas prácticas de Angular (SRP - Single Responsibility Principle) y el diseño modular.
+
+### Fase 1: Arquitectura y Configuración Inicial
+Comenzamos creando módulos independientes para las páginas (`pokemon-list` y `pokemon-search`) usando el CLI de Ionic. Se configuró el enrutador principal (`app-routing.module.ts`) aplicando *Lazy Loading* para optimizar la carga de la aplicación.
+*(🖼️ **Sugerencia de captura para añadir aquí:** Una captura de tu editor VS Code mostrando el panel lateral con la estructura de carpetas `src/app/pages/pokemon-search/` o tu archivo de rutas).*
+
+![Arquitectura](./screenshots/arquitectura.png)
+
+### Fase 2: Consumo de la API (Servicios)
+Se utilizó `HttpClientModule` en un servicio centralizado (`pokemon.service.ts`). Se implementaron métodos para manejar peticiones asíncronas usando `Observables`.
+* **Manejo de Errores:** Se implementó una lógica de captura de errores (`error.status === 404`) para notificar al usuario si ingresa un nombre de Pokémon incorrecto, mejorando la UX.
+*(🖼️ **Sugerencia de captura para añadir aquí:** Una captura de la consola del navegador mostrando el Fetch exitoso de la PokeAPI, o el código de tu función `searchPokemon` donde se maneja el error).*
+
+![Consumo API](./screenshots/api-fetch.png)
+
+### Fase 3: Construcción de la Interfaz (UI/UX)
+La vista (`.html`) se construyó utilizando componentes avanzados de Ionic:
+* `<ion-searchbar>` para una entrada de datos amigable en móviles.
+* `<ion-card>` y `<ion-chip>` para organizar la información (tipos y habilidades).
+* `<ion-progress-bar>` para representar el poder del Pokémon dinámicamente (`stat.base_stat / 255`).
+* Integración del objeto `Audio()` nativo de JavaScript para reproducir el atributo `cries` proveniente de la API.
+*(🖼️ **Sugerencia de captura para añadir aquí:** Una captura enfocada en la tarjeta del Pokémon donde se aprecien claramente las barras de progreso verdes).*
+
+![UI UX Progress](./screenshots/ui-ux.png)
+
+### Fase 4: Identidad Visual y Splash Screen
+Para darle un acabado profesional de PWA/App Nativa:
+1. **Splash Screen Dinámico:** Se creó un componente Angular dedicado a la pantalla de carga. Mediante animaciones `@keyframes` en SCSS, se dibujó una Pokeball que rebota y gira sin necesidad de recursos externos `.png` o `.gif`. Se programó para desvanecerse tras 3 segundos.
+2. **Íconos de App:** Usando la herramienta `@capacitor/assets`, se generaron todos los tamaños necesarios del ícono de la aplicación para su posterior despliegue en Android e iOS, inyectándolos en las carpetas nativas correspondientes.
+*(🖼️ **Sugerencia de captura para añadir aquí:** Un GIF corto o captura de tu Splash Screen rojo de la Pokeball justo antes de que se desvanezca).*
+
+![Splash Screen](./screenshots/splash-screen.gif)
+
+---
+
+## 🚀 Instalación y Ejecución Local
+
+Si deseas clonar este repositorio y ejecutarlo en tu máquina local, sigue estos pasos:
+
+1. Clona el repositorio:
+   ```bash
+   git clone [TU-URL-DEL-REPO]
+
+
