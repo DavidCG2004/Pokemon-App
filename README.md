@@ -44,9 +44,9 @@ A continuación se muestra el diseño adaptable (Responsive) funcionando tanto e
 El desarrollo de esta aplicación se dividió en varias fases estratégicas, priorizando las buenas prácticas de Angular (SRP - Single Responsibility Principle) y el diseño modular.
 
 ### Fase 1: Arquitectura y Configuración Inicial
-Comenzamos creando módulos independientes para las páginas (`pokemon-list` y `pokemon-search`) usando el CLI de Ionic. Se configuró el enrutador principal (`app-routing.module.ts`) aplicando *Lazy Loading* para optimizar la carga de la aplicación.
+Comenzamos creando un módulo independiente para la página (`pokemon-search`) usando el CLI de Ionic. Se configuró el enrutador principal (`app-routing.module.ts`) aplicando *Lazy Loading* para optimizar la carga de la aplicación.
 *(🖼️ **Sugerencia de captura para añadir aquí:** Una captura de tu editor VS Code mostrando el panel lateral con la estructura de carpetas `src/app/pages/pokemon-search/` o tu archivo de rutas).*
-
+<img width="305" height="622" alt="image" src="https://github.com/user-attachments/assets/fe4338f3-87ef-4a78-a02a-1a1ee866f8b9" />
 ![Arquitectura](./screenshots/arquitectura.png)
 
 ### Fase 2: Consumo de la API (Servicios)
@@ -82,6 +82,6 @@ Si deseas clonar este repositorio y ejecutarlo en tu máquina local, sigue estos
 
 1. Clona el repositorio:
    ```bash
-   git clone [TU-URL-DEL-REPO]
+   git clone [https://github.com/DavidCG2004/Pokemon-App.git]
 
 
