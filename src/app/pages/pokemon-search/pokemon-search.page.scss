@@ -1,0 +1,119 @@
+
+ion-title {
+  font-size: 2rem;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  text-align: center;
+  color: var(--ion-color-medium);
+
+  p { margin-top: 15px; font-size: 1.1rem; }
+}
+
+.error-message { color: var(--ion-color-danger); }
+
+/* Estilos de la Tarjeta */
+.pokemon-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  margin: 10px 0;
+}
+
+.image-container {
+  background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(245,245,245,1) 100%);
+  padding: 30px 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 10px;
+
+  img {
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+    /* Da un efecto 3D genial a los PNGs */
+    filter: drop-shadow(0px 10px 8px rgba(0,0,0,0.3)); 
+  }
+}
+
+.title-with-audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+  ion-button {
+    margin: 0;
+    --padding-start: 5px;
+    --padding-end: 5px;
+  }
+}
+
+/* Utilidades Flex */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Info Grid (Peso, Altura) */
+.info-grid {
+  background: rgba(0,0,0,0.02);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  
+  p { margin: 4px 0; font-size: 0.9rem; }
+}
+
+ion-item-divider {
+  background: transparent;
+  --padding-start: 0;
+  margin-top: 10px;
+}
+
+/* Lista de Estadísticas */
+.stats-list {
+  ion-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    --min-height: 35px;
+    font-size: 0.85rem;
+
+    .stat-name {
+      flex: 3; /* Ocupa 3 partes de espacio */
+      font-weight: 600;
+      color: var(--ion-color-medium);
+      margin: 0;
+    }
+    
+    .stat-value {
+      flex: 1; /* Ocupa 1 parte de espacio */
+      font-weight: bold;
+      text-align: right;
+      margin-right: 15px;
+    }
+    
+    .progress-container {
+      flex: 6; /* La barra es la que más espacio ocupa */
+      display: flex;
+      align-items: center;
+
+      ion-progress-bar {
+        height: 8px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

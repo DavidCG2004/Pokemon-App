@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title mode="ios">Pokédex</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar 
+      [(ngModel)]="searchTerm" 
+      search-icon="search-circle"
+      (search)="searchPokemon()"
+      placeholder="Ej: pikachu, charizard, mew"
+      animated="true"
+      show-clear-button="focus"
+      clear-icon="trash-bin">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <!-- Estado de Carga -->
+  <div class="center-content" *ngIf="loading">
+    <ion-spinner name="crescent" color="primary"></ion-spinner>
+    <p>Escaneando Pokédex...</p>
+  </div>
+
+  <!-- Estado de Error -->
+  <div class="center-content error-message" *ngIf="errorMessage">
+    <ion-icon name="alert-circle-outline" color="danger" size="large"></ion-icon>
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- Tarjeta Principal del Pokémon -->
+  <ion-card *ngIf="pokemon && !loading" class="pokemon-card">
+    
+    <!-- Contenedor de Imagen con fondo -->
+    <div class="image-container">
+      <img [src]="pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default" 
+           [alt]="pokemon.name" />
+    </div>
+         
+    <ion-card-header class="ion-text-center">
+      <ion-card-subtitle>Nº {{ pokemon.id }}</ion-card-subtitle>
+      <ion-card-title class="title-with-audio">
+        {{ pokemon.name | titlecase }}
+        <!-- Botón de sonido (Llama a la función playSound del TS) -->
+        <ion-button fill="clear" color="dark" (click)="playSound()" *ngIf="pokemon.cries?.latest">
+          <ion-icon slot="icon-only" name="volume-high"></ion-icon>
+        </ion-button>
+      </ion-card-title>
+      
+      <!-- Tipos en formato CHIP (Etiquetas) -->
+      <div class="flex-center">
+        <ion-chip *ngFor="let t of pokemon.types" color="secondary">
+          <ion-label>{{ t.type.name | titlecase }}</ion-label>
+        </ion-chip>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <!-- Cuadrícula de Info General (Peso, Altura, Exp) -->
+      <ion-grid class="info-grid">
+        <ion-row class="ion-text-center">
+          <ion-col>
+            <ion-icon name="barbell-outline" color="medium"></ion-icon>
+            <p><strong>Peso</strong></p>
+            <p>{{ pokemon.weight / 10 }} kg</p>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="resize-outline" color="medium"></ion-icon>
+            <p><strong>Altura</strong></p>
+            <p>{{ pokemon.height / 10 }} m</p>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="star-outline" color="warning"></ion-icon>
+            <p><strong>Exp. Base</strong></p>
+            <p>{{ pokemon.base_experience }}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <!-- Sección Habilidades -->
+      <ion-item-divider mode="md">
+        <ion-label color="dark"><strong>Habilidades</strong></ion-label>
+      </ion-item-divider>
+      <div class="flex-wrap ion-padding-top ion-padding-bottom">
+        <ion-chip *ngFor="let a of pokemon.abilities" [outline]="a.is_hidden" color="secondary">
+          <ion-label>
+            {{ a.ability.name | titlecase }} 
+            <span *ngIf="a.is_hidden" style="font-size: 0.8em; opacity: 0.8;">(Oculta)</span>
+          </ion-label>
+        </ion-chip>
+      </div>
+
+      <!-- Sección Estadísticas Base -->
+      <ion-item-divider mode="md">
+        <ion-label color="dark"><strong>Estadísticas Base</strong></ion-label>
+      </ion-item-divider>
+      <ion-list lines="none" class="stats-list">
+        <ion-item *ngFor="let stat of pokemon.stats">
+          <ion-label class="stat-name">{{ formatStatName(stat.stat.name) }}</ion-label>
+          <ion-label class="stat-value">{{ stat.base_stat }}</ion-label>
+          <div class="progress-container">
+            <!-- Usamos 255 porque es el máximo histórico de una estadística en el juego -->
+            <ion-progress-bar [value]="stat.base_stat / 255" color="success"></ion-progress-bar>
+          </div>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
