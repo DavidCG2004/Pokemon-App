@@ -71,9 +71,10 @@ La vista (`.html`) se construyó utilizando componentes avanzados de Ionic:
 * `<ion-card>` y `<ion-chip>` para organizar la información (tipos y habilidades).
 * `<ion-progress-bar>` para representar el poder del Pokémon dinámicamente (`stat.base_stat / 255`).
 * Integración del objeto `Audio()` nativo de JavaScript para reproducir el atributo `cries` proveniente de la API.
-*(🖼️ **Sugerencia de captura para añadir aquí:** Una captura enfocada en la tarjeta del Pokémon donde se aprecien claramente las barras de progreso verdes).*
+<br>
+<img width="1332" height="315" alt="image" src="https://github.com/user-attachments/assets/6a7706c4-2eb2-4284-95d0-5baca1bfcdec" />
 
-![UI UX Progress](./screenshots/ui-ux.png)
+
 
 ### Fase 4: Identidad Visual y Splash Screen
 Para darle un acabado profesional de PWA/App Nativa:
@@ -81,7 +82,6 @@ Para darle un acabado profesional de PWA/App Nativa:
 2. **Íconos de App:** Usando la herramienta `@capacitor/assets`, se generaron todos los tamaños necesarios del ícono de la aplicación para su posterior despliegue en Android e iOS, inyectándolos en las carpetas nativas correspondientes.
 *(🖼️ **Sugerencia de captura para añadir aquí:** Un GIF corto o captura de tu Splash Screen rojo de la Pokeball justo antes de que se desvanezca).*
 
-![Splash Screen](./screenshots/splash-screen.gif)
 
 ---
 
