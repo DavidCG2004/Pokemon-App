@@ -26,14 +26,14 @@ A continuación se muestra el diseño adaptable (Responsive) funcionando tanto e
 <img width="1366" height="693" alt="Captura de pantalla (97)" src="https://github.com/user-attachments/assets/f1e5412b-ccd8-4a8d-8fe9-1b47ebc6e873" />
 <img width="1366" height="687" alt="Captura de pantalla (94)" src="https://github.com/user-attachments/assets/710d4057-a5d0-4de3-982b-6e456ef4a77a" />
 ### 📱 Vista Móvil (App)
-<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM (3)" src="https://github.com/user-attachments/assets/b2b07b7a-6d10-403d-ba85-c939de74ca62" />
-<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 43 29 AM" src="https://github.com/user-attachments/assets/b80b985f-fc47-4268-b997-a2c30ff4b4b8" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM (1)" src="https://github.com/user-attachments/assets/99ca6788-f19e-4ac5-b5b5-1672104ea4dd" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM" src="https://github.com/user-attachments/assets/3553506d-6866-4b90-a559-6c8261b08c38" />
-<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM (2)" src="https://github.com/user-attachments/assets/c050fa89-710a-42f3-9ca2-2b050b6fbf6d" />
 
-
-
+<p align="center">
+  <img width="220" alt="Vista Móvil 1" src="https://github.com/user-attachments/assets/b2b07b7a-6d10-403d-ba85-c939de74ca62" />
+  <img width="220" alt="Vista Móvil 2" src="https://github.com/user-attachments/assets/b80b985f-fc47-4268-b997-a2c30ff4b4b8" />
+  <img width="220" alt="Vista Móvil 3" src="https://github.com/user-attachments/assets/99ca6788-f19e-4ac5-b5b5-1672104ea4dd" />
+  <img width="220" alt="Vista Móvil 4" src="https://github.com/user-attachments/assets/3553506d-6866-4b90-a559-6c8261b08c38" />
+  <img width="220" alt="Vista Móvil 5" src="https://github.com/user-attachments/assets/c050fa89-710a-42f3-9ca2-2b050b6fbf6d" />
+</p>
 ---
 
 ## 🛠️ Detalle del Proceso de Desarrollo
