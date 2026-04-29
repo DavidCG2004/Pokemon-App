@@ -71,7 +71,6 @@ La vista (`.html`) se construyó utilizando componentes avanzados de Ionic:
 * `<ion-card>` y `<ion-chip>` para organizar la información (tipos y habilidades).
 * `<ion-progress-bar>` para representar el poder del Pokémon dinámicamente (`stat.base_stat / 255`).
 * Integración del objeto `Audio()` nativo de JavaScript para reproducir el atributo `cries` proveniente de la API.
-<br>
 <p align="center">
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/6a7706c4-2eb2-4284-95d0-5baca1bfcdec" />
 </p>
