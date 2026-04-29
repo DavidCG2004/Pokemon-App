@@ -21,17 +21,13 @@ Una aplicación móvil y web moderna construida con **Ionic Framework** y **Angu
 A continuación se muestra el diseño adaptable (Responsive) funcionando tanto en entorno web (Desktop) como simulado en dispositivo móvil.
 
 ### 💻 Vista Desktop (Web)
-*(Coloca aquí la captura de pantalla de la app abierta en tu navegador a pantalla completa. Se recomienda buscar a Charizard o Mew para mostrar datos completos).*
 <img width="1366" height="693" alt="Captura de pantalla (95)" src="https://github.com/user-attachments/assets/f0f243e4-335d-453b-83ce-e5aeeec00214" />
 <img width="1366" height="691" alt="Captura de pantalla (96)" src="https://github.com/user-attachments/assets/cf108938-011c-441d-a977-ad1966ba548e" />
 <img width="1366" height="693" alt="Captura de pantalla (97)" src="https://github.com/user-attachments/assets/f1e5412b-ccd8-4a8d-8fe9-1b47ebc6e873" />
 <img width="1366" height="687" alt="Captura de pantalla (94)" src="https://github.com/user-attachments/assets/710d4057-a5d0-4de3-982b-6e456ef4a77a" />
-> *Vista extendida aprovechando el sistema de cuadrículas (`ion-grid`) de Ionic.*
-
 ### 📱 Vista Móvil (App)
-*(Coloca aquí una captura de la app usando las DevTools de Chrome simulando un teléfono, o una captura directamente desde tu celular).*
+<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM (3)" src="https://github.com/user-attachments/assets/b2b07b7a-6d10-403d-ba85-c939de74ca62" />
 
-![Vista Móvil](./screenshots/mobile-view.png)
 > *Vista compacta renderizando los componentes nativos móviles.*
 
 ---
