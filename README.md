@@ -55,15 +55,12 @@ Se utilizó `HttpClientModule` en un servicio centralizado (`pokemon.service.ts`
 
 <div align="center">
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; max-width: 1100px;">
-    
     <img width="100%" 
          alt="Pokemon Service - Consumo de API" 
          src="https://github.com/user-attachments/assets/56d3d31a-99b5-4ff2-ad2b-ece8f7e76a7e" />
-    
     <img width="100%" 
          alt="Manejo de errores en Pokemon Service" 
          src="https://github.com/user-attachments/assets/a5bafa26-2185-4a87-9103-196039947ff4" />
-    
   </div>
 </div>
 
