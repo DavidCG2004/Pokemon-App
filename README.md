@@ -72,18 +72,17 @@ La vista (`.html`) se construyó utilizando componentes avanzados de Ionic:
 * `<ion-progress-bar>` para representar el poder del Pokémon dinámicamente (`stat.base_stat / 255`).
 * Integración del objeto `Audio()` nativo de JavaScript para reproducir el atributo `cries` proveniente de la API.
 <br>
-<img width="1332" height="315" alt="image" src="https://github.com/user-attachments/assets/6a7706c4-2eb2-4284-95d0-5baca1bfcdec" />
-
+<p align="center">
+<img width="220" alt="image" src="https://github.com/user-attachments/assets/6a7706c4-2eb2-4284-95d0-5baca1bfcdec" />
+</p>
 
 
 ### Fase 4: Identidad Visual y Splash Screen
 Para darle un acabado profesional de PWA/App Nativa:
 1. **Splash Screen Dinámico:** Se creó un componente Angular dedicado a la pantalla de carga. Mediante animaciones `@keyframes` en SCSS, se dibujó una Pokeball que rebota y gira sin necesidad de recursos externos `.png` o `.gif`. Se programó para desvanecerse tras 3 segundos.
 2. **Íconos de App:** Usando la herramienta `@capacitor/assets`, se generaron todos los tamaños necesarios del ícono de la aplicación para su posterior despliegue en Android e iOS, inyectándolos en las carpetas nativas correspondientes.
-*(🖼️ **Sugerencia de captura para añadir aquí:** Un GIF corto o captura de tu Splash Screen rojo de la Pokeball justo antes de que se desvanezca).*
-<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 43 29 AM" src="https://github.com/user-attachments/assets/ac99b00c-00e2-4eb4-89bb-03744b44bc6f" />
-<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 42 57 AM (3)" src="https://github.com/user-attachments/assets/a142866c-c117-4d37-8397-621a377e848b" />
 
+<img width="1080" height="2340" alt="WhatsApp Image 2026-04-29 at 12 43 29 AM" src="https://github.com/user-attachments/assets/ac99b00c-00e2-4eb4-89bb-03744b44bc6f" />
 
 ---
 
