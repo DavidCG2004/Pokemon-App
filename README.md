@@ -28,7 +28,7 @@ A continuación se muestra el diseño adaptable (Responsive) funcionando tanto e
 <img width="1366" height="693" alt="Captura de pantalla (97)" src="https://github.com/user-attachments/assets/f1e5412b-ccd8-4a8d-8fe9-1b47ebc6e873" />
 <br>
 <img width="1366" height="687" alt="Captura de pantalla (94)" src="https://github.com/user-attachments/assets/710d4057-a5d0-4de3-982b-6e456ef4a77a" />
-<br>
+
 ### 📱 Vista Móvil (App)
 <br>
 <p align="center">
