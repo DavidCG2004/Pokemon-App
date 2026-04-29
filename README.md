@@ -32,13 +32,13 @@ A continuación se muestra el diseño adaptable (Responsive) funcionando tanto e
 ### 📱 Vista Móvil (App)
 <br>
 <p align="center">
+  <br>
   <img width="220" alt="Vista Móvil 1" src="https://github.com/user-attachments/assets/b2b07b7a-6d10-403d-ba85-c939de74ca62" />
   <img width="220" alt="Vista Móvil 2" src="https://github.com/user-attachments/assets/b80b985f-fc47-4268-b997-a2c30ff4b4b8" />
   <img width="220" alt="Vista Móvil 3" src="https://github.com/user-attachments/assets/99ca6788-f19e-4ac5-b5b5-1672104ea4dd" />
   <img width="220" alt="Vista Móvil 4" src="https://github.com/user-attachments/assets/3553506d-6866-4b90-a559-6c8261b08c38" />
   <img width="220" alt="Vista Móvil 5" src="https://github.com/user-attachments/assets/c050fa89-710a-42f3-9ca2-2b050b6fbf6d" />
 </p>
----
 
 ## 🛠️ Detalle del Proceso de Desarrollo
 
